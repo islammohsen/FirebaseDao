@@ -85,6 +85,9 @@ public abstract class FirebaseDao<T> {
     // 2. If you want to update an existing object you should pass an existing id.
     public void save(T t, String id, final TaskListener taskListener);
 	
+	// This function deletes an entry from table.
+	public void delete(String id, TaskListener taskListener);
+	
     // This is the only function that you should implement. All of the above are implemented for you.
     // You should specify how the datasnapshot (Firebase JSON data) be parsed into your own object
 	protected abstract void parseDataSnapshot(DataSnapshot dataSnapshot, RetrievalEventListener<T> retrievalEventListener);
