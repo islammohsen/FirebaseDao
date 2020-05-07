@@ -8,7 +8,7 @@ You have to implement it to your own Dao class and most of the job will be done 
 
 ## How to install ?
 
-1. **Set up your android application** 
+1. **Set up your android application with firebase** 
 
     Nothing better than the offical android [documentation](https://firebase.google.com/docs/android/setup).
 
