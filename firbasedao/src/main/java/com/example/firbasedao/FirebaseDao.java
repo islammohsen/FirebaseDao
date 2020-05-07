@@ -98,5 +98,9 @@ public abstract class FirebaseDao<T> {
             }
         });
     }
+
+    public void delete(String id, TaskListener taskListener){
+        save(null, id, taskListener);
+    }
 }
 
